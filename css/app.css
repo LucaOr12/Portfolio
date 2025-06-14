@@ -4,6 +4,10 @@
   --color-bg: #E2E5E1;
   --color-text: #000000;
   --color-accent: #FF5741;
+  --color-accent2: #FFC741;
+  /*gradient color*/
+  --color-gradient: linear-gradient(90deg, #FF5741, #FFC741);
+  --color-gradientUp: linear-gradient(0deg, #FF5741, #FFC741);
 }
 
 html, body, #app {

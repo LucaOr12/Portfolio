@@ -31,7 +31,7 @@ main[b-57rfh191dz] {
     right: -250px;
     width: 250px;
     height: calc(100% - 60px); /* adjusted height */
-    background: var(--color-accent);
+    background: var(--color-gradientUp);
     color: var(--color-text);
     padding: 1rem;
     transition: right 0.3s ease;
@@ -99,7 +99,7 @@ main[b-57rfh191dz] {
     border: none;
 }
 .topbar.open[b-6e1lymgyb0]{
-    background-color: var(--color-accent);
+    background: var(--color-gradient);
 }
 
 /* Left content styling */
@@ -188,13 +188,40 @@ main[b-57rfh191dz] {
     background-color: var(--color-bg);
     color: var(--color-text);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    height: 100vh;
+    text-align: center;
     scroll-snap-align: start;
+    height: 100vh;
     padding: 2rem;
     box-sizing: border-box;
+}
+
+.home-section .content h1[b-ois3x2fd0s] {
+    font-size: 6rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.home-section .content h2[b-ois3x2fd0s] {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home-section .content p[b-ois3x2fd0s] {
+    font-size: 2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-family: 'Roboto', sans-serif;
 }
 /* /Pages/Projects.razor.rz.scp.css */
 .projects-section[b-437rvyghf2] {
