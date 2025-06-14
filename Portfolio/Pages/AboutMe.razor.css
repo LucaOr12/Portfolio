@@ -1,0 +1,12 @@
+.aboutme-section {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    height: 100vh;
+    scroll-snap-align: start;
+    padding: 2rem;
+    box-sizing: border-box;
+}

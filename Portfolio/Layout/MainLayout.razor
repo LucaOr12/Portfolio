@@ -1,16 +1,21 @@
-﻿@inherits LayoutComponentBase
-<div class="page">
-    <div class="sidebar">
-        <NavMenu/>
-    </div>
+﻿@using Portfolio.Pages
+@inherits LayoutComponentBase
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
+<TopBar OnToggleNav="ToggleNav" IsNavOpen="@isNavOpen" />
+<NavBar IsOpen="@isNavOpen" OnClose="CloseNav" />
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
+<div class="scroll-container">
+    <div id="home" class="scroll-section"><Home /></div>
+    <div id="about" class="scroll-section"><AboutMe /></div>
+    <div id="projects" class="scroll-section"><Projects /></div>
+    <div id="contact" class="scroll-section"><Contacts /></div>
 </div>
+
+@code {
+    private bool isNavOpen = false;
+
+    void ToggleNav() => isNavOpen = !isNavOpen;
+    void CloseNav() => isNavOpen = false;
+}
+
+
