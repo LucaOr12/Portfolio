@@ -159,16 +159,81 @@ main[b-57rfh191dz] {
 }
 /* /Pages/AboutMe.razor.rz.scp.css */
 .aboutme-section[b-vc1rxuirtp] {
+    display: flex;
+    height: 100vh;
+    padding: 4rem 6rem;
+    box-sizing: border-box;
     background-color: var(--color-bg);
     color: var(--color-text);
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.aboutme-left[b-vc1rxuirtp], .aboutme-right[b-vc1rxuirtp] {
+    flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    height: 100vh;
-    scroll-snap-align: start;
-    padding: 2rem;
-    box-sizing: border-box;
+}
+
+.aboutme-left[b-vc1rxuirtp] {
+    padding-right: 25rem;
+    justify-content: flex-end; /* shift left side content further left */
+}
+
+.aboutme-right[b-vc1rxuirtp] {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.circle-image[b-vc1rxuirtp] {
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background: var(--color-gradient);
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circle-image:hover[b-vc1rxuirtp] {
+    transform: scale(1.05);
+    box-shadow: 0 12px 36px rgba(0,0,0,0.4);
+}
+
+.circle-image img[b-vc1rxuirtp] {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.circle-image:hover img[b-vc1rxuirtp] {
+    transform: rotate(-1deg);
+}
+
+.aboutme-right h1[b-vc1rxuirtp] {
+    font-size: 6rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.aboutme-right p[b-vc1rxuirtp] {
+    max-width: 700px;
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 /* /Pages/Contacts.razor.rz.scp.css */
 .contacts-section[b-dhq13rxui7] {
@@ -214,14 +279,14 @@ main[b-57rfh191dz] {
     font-size: 4rem;
     font-weight: 400;
     margin-bottom: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .home-section .content p[b-ois3x2fd0s] {
     font-size: 2rem;
     max-width: 600px;
     margin: 0 auto 2rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 /* /Pages/Projects.razor.rz.scp.css */
 .projects-section[b-437rvyghf2] {
