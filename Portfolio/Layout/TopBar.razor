@@ -1,0 +1,19 @@
+@code {
+    [Parameter] public EventCallback OnToggleNav { get; set; }
+    [Parameter] public bool IsNavOpen { get; set; }
+}
+
+<div class="topbar">
+    <div class="left">
+        <span class="title">LUCA ORABONA</span>
+        <span class="contact">+39 351 030 0577</span>
+        <span class="contact">luca.orabona1210@gmail.com</span>
+    </div>
+    <div class="right">
+        <button class="hamburger @(IsNavOpen ? "open" : "")" @onclick="() => OnToggleNav.InvokeAsync()">
+            <span class="bar top"></span>
+            <span class="bar middle"></span>
+            <span class="bar bottom"></span>
+        </button>
+    </div>
+</div>

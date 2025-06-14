@@ -1,0 +1,28 @@
+@inject IJSRuntime JS
+
+@code {
+    [Parameter] public bool IsOpen { get; set; }
+    [Parameter] public EventCallback OnClose { get; set; }
+
+    private string NavClass => IsOpen ? "navbar open" : "navbar";
+
+    private async Task ScrollToSection(string id)
+    {
+        await JS.InvokeVoidAsync("scrollToSection", id);
+        await OnClose.InvokeAsync(); // close navbar after click
+    }
+}
+
+<div class="@NavClass" @onclick:stopPropagation>
+    <ul>
+        <li><a href="#" @onclick='() => ScrollToSection("home")' @onclick:preventDefault>Home</a></li>
+        <li><a href="#" @onclick='() => ScrollToSection("about")' @onclick:preventDefault>About Me</a></li>
+        <li><a href="#" @onclick='() => ScrollToSection("projects")' @onclick:preventDefault>Projects</a></li>
+        <li><a href="#" @onclick='() => ScrollToSection("contact")' @onclick:preventDefault>Contacts</a></li>
+    </ul>
+</div>
+
+@if (IsOpen)
+{
+    <div class="overlay" @onclick="OnClose"></div>
+}
