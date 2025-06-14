@@ -29,8 +29,8 @@
 }
 
 .circle-image {
-    width: 800px;
-    height: 800px;
+    width: 620px;
+    height: 620px;
     border-radius: 50%;
     background: var(--color-gradient);
     padding: 15px;
