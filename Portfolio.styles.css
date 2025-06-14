@@ -115,6 +115,14 @@ main[b-57rfh191dz] {
     margin-right: 1rem;
 }
 
+.left .title:hover[b-6e1lymgyb0]{
+    background: var(--color-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
 .contact[b-6e1lymgyb0] {
     font-weight: normal;
     margin-right: 1rem;
