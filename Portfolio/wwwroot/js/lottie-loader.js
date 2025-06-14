@@ -4,6 +4,6 @@ window.loadLottieAnimation = () => {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: '/data/lottie-contacts.json'
+        path: 'data/lottie-contacts.json'
     });
 };
