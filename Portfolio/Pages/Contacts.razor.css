@@ -1,8 +1,13 @@
 .contacts-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     padding: 4rem 2rem;
-    text-align: center;
     background-color: var(--color-bg);
     color: var(--color-text);
+    gap: 3rem;
+    text-align: left; /* Changed from center to left for better layout */
 }
 
 .contacts-section h2 {
@@ -14,6 +19,29 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+    text-align: center; /* Keep title centered */
+    width: 100%;
+}
+
+.contacts-left {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    justify-content: center;
+}
+
+.lottie-container {
+    width: 800px;
+    height: 800px;
+}
+
+.contacts-right {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
 }
 
 .social-links {
@@ -21,6 +49,7 @@
     flex-direction: column;
     gap: 1.5rem;
     align-items: center;
+    width: 100%;
 }
 
 .social-links a {
@@ -31,10 +60,13 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
 }
 
 .social-links a:hover {
     transform: scale(1.05);
+    animation: shake 0.5s ease;
     background: var(--color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -42,6 +74,13 @@
     color: transparent;
 }
 
+@keyframes shake {
+    0% { transform: scale(1.05) translateX(0); }
+    25% { transform: scale(1.05) translateX(-2px); }
+    50% { transform: scale(1.05) translateX(2px); }
+    75% { transform: scale(1.05) translateX(-2px); }
+    100% { transform: scale(1.05) translateX(0); }
+}
 .social-links i {
     font-size: 1.8rem;
 }
