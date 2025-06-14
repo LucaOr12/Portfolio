@@ -1,13 +1,22 @@
+@inject IJSRuntime JS
+
 @code {
     [Parameter] public EventCallback OnToggleNav { get; set; }
     [Parameter] public bool IsNavOpen { get; set; }
 
     private string TopBarClass => IsNavOpen ? "topbar open" : "topbar";
+    
+    private async Task ScrollToSection(string id)
+    {
+        await JS.InvokeVoidAsync("scrollToSection", id);
+    }
 }
 
 <div class="@TopBarClass">
     <div class="left">
-        <span class="title">LUCA ORABONA</span>
+        <span class="title" @onclick='() => ScrollToSection("home")' style="cursor: pointer;">
+            LUCA ORABONA
+        </span>
         <span class="contact">+39 351 030 0577</span>
         <span class="contact">luca.orabona1210@gmail.com</span>
     </div>
