@@ -1,12 +1,77 @@
 .aboutme-section {
+    display: flex;
+    height: 100vh;
+    padding: 4rem 6rem;
+    box-sizing: border-box;
     background-color: var(--color-bg);
     color: var(--color-text);
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.aboutme-left, .aboutme-right {
+    flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    height: 100vh;
-    scroll-snap-align: start;
-    padding: 2rem;
-    box-sizing: border-box;
+}
+
+.aboutme-left {
+    padding-right: 25rem;
+    justify-content: flex-end; /* shift left side content further left */
+}
+
+.aboutme-right {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.circle-image {
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background: var(--color-gradient);
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circle-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 36px rgba(0,0,0,0.4);
+}
+
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.circle-image:hover img {
+    transform: rotate(-1deg);
+}
+
+.aboutme-right h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.aboutme-right p {
+    max-width: 700px;
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
