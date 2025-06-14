@@ -66,6 +66,7 @@ main[b-57rfh191dz] {
     color: var(--color-text);
     text-decoration: none;
     font-weight: 500;
+    font-size: 1.5rem;
 }
 
 .navbar a:hover[b-en1a8on1pm] {
@@ -189,8 +190,8 @@ main[b-57rfh191dz] {
 }
 
 .circle-image[b-vc1rxuirtp] {
-    width: 800px;
-    height: 800px;
+    width: 620px;
+    height: 620px;
     border-radius: 50%;
     background: var(--color-gradient);
     padding: 15px;
@@ -251,10 +252,15 @@ main[b-57rfh191dz] {
 }
 /* /Pages/Contacts.razor.rz.scp.css */
 .contacts-section[b-dhq13rxui7] {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     padding: 4rem 2rem;
-    text-align: center;
     background-color: var(--color-bg);
     color: var(--color-text);
+    gap: 3rem;
+    text-align: left; /* Changed from center to left for better layout */
 }
 
 .contacts-section h2[b-dhq13rxui7] {
@@ -266,6 +272,29 @@ main[b-57rfh191dz] {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+    text-align: center; /* Keep title centered */
+    width: 100%;
+}
+
+.contacts-left[b-dhq13rxui7] {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    justify-content: center;
+}
+
+.lottie-container[b-dhq13rxui7] {
+    width: 800px;
+    height: 800px;
+}
+
+.contacts-right[b-dhq13rxui7] {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
 }
 
 .social-links[b-dhq13rxui7] {
@@ -273,6 +302,7 @@ main[b-57rfh191dz] {
     flex-direction: column;
     gap: 1.5rem;
     align-items: center;
+    width: 100%;
 }
 
 .social-links a[b-dhq13rxui7] {
@@ -283,10 +313,13 @@ main[b-57rfh191dz] {
     display: flex;
     align-items: center;
     gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
 }
 
 .social-links a:hover[b-dhq13rxui7] {
     transform: scale(1.05);
+    animation: shake-b-dhq13rxui7 0.5s ease;
     background: var(--color-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -294,6 +327,13 @@ main[b-57rfh191dz] {
     color: transparent;
 }
 
+@keyframes shake-b-dhq13rxui7 {
+    0% { transform: scale(1.05) translateX(0); }
+    25% { transform: scale(1.05) translateX(-2px); }
+    50% { transform: scale(1.05) translateX(2px); }
+    75% { transform: scale(1.05) translateX(-2px); }
+    100% { transform: scale(1.05) translateX(0); }
+}
 .social-links i[b-dhq13rxui7] {
     font-size: 1.8rem;
 }
