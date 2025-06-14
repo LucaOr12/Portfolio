@@ -4,13 +4,18 @@
     left: 0;
     width: 100%;
     height: 60px;
-    background-color: var(--color-accent);
+    background-color: var(--color-bg);
+    transition: background-color 0.3s ease;
     color: var(--color-text);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
     z-index: 1002;
+    border: none;
+}
+.topbar.open{
+    background-color: var(--color-accent);
 }
 
 /* Left content styling */

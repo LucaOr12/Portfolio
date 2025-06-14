@@ -1,9 +1,11 @@
 @code {
     [Parameter] public EventCallback OnToggleNav { get; set; }
     [Parameter] public bool IsNavOpen { get; set; }
+
+    private string TopBarClass => IsNavOpen ? "topbar open" : "topbar";
 }
 
-<div class="topbar">
+<div class="@TopBarClass">
     <div class="left">
         <span class="title">LUCA ORABONA</span>
         <span class="contact">+39 351 030 0577</span>
