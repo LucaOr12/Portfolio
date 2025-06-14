@@ -28,6 +28,7 @@ html, body, #app {
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 .scroll-section {
