@@ -18,7 +18,7 @@
 
 .aboutme-left {
     padding-right: 25rem;
-    justify-content: flex-end; /* shift left side content further left */
+    justify-content: flex-end;
 }
 
 .aboutme-right {
@@ -39,22 +39,36 @@
     justify-content: flex-start;
     box-shadow: 0 8px 24px rgba(0,0,0,0.25);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
 }
 
+/* Hover effect on the container */
 .circle-image:hover {
     transform: scale(1.05);
     box-shadow: 0 12px 36px rgba(0,0,0,0.4);
 }
 
-.circle-image img {
+/* Anchor inside the circle */
+.circle-image a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* Image inside the anchor */
+.circle-image a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+    display: block;
     transition: transform 0.3s ease;
 }
 
-.circle-image:hover img {
+/* Image hover effect */
+.circle-image:hover a img {
     transform: rotate(-1deg);
 }
 
