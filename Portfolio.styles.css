@@ -290,14 +290,84 @@ main[b-57rfh191dz] {
 }
 /* /Pages/Projects.razor.rz.scp.css */
 .projects-section[b-437rvyghf2] {
+    padding: 2rem;
     background-color: var(--color-bg);
     color: var(--color-text);
     display: flex;
+    flex-direction: column;
     align-items: center;
+}
+.projects-section h2[b-437rvyghf2]{
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 700;
+    margin: 6rem 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.projects-grid[b-437rvyghf2] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     justify-content: center;
-    font-size: 2rem;
-    height: 100vh;
-    scroll-snap-align: start;
-    padding: 2rem;
-    box-sizing: border-box;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.project-card[b-437rvyghf2] {
+    width: 600px;
+    background: var(--color-gradient);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: transform 0.15s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover[b-437rvyghf2] {
+    animation: vibrate-b-437rvyghf2 0.2s linear infinite;
+    transform: scale(1.05);
+}
+
+.card-image img[b-437rvyghf2] {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card-content[b-437rvyghf2] {
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.card-content h3[b-437rvyghf2] {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.card-content h3 i[b-437rvyghf2] {
+    font-size: 1.2rem;
+    color: var(--color-text);
+}
+
+.card-content p[b-437rvyghf2] {
+    margin: 0;
+}
+
+@keyframes vibrate-b-437rvyghf2 {
+    0% { transform: translate(0); }
+    20% { transform: translate(-1px, 1px); }
+    40% { transform: translate(-1px, -1px); }
+    60% { transform: translate(1px, 1px); }
+    80% { transform: translate(1px, -1px); }
+    100% { transform: translate(0); }
 }
