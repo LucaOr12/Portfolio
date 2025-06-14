@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Portfolio",
+    "description": "This very website, built with Blazor and WebAssembly.",
+    "url": "https://lucaor12.github.io/Portfolio/",
+    "img": "Images/Portfolio.png",
+    "icon": "fa-solid fa-laptop-code"
+  },
+  {
+    "title": "Ferdinando Lignano",
+    "description": "A Museum website to showcase all of Ferdinando's works. Built with ReactJs",
+    "url": "https://ferdinando-lignano.vercel.app/",
+    "img": "Images/FerdinandoLignano.png",
+    "icon": "fa-solid fa-palette"
+  },
+  {
+    "title": "Tetris Game",
+    "description": "A simple Javascript Tetris game.",
+    "url": "https://tetris-website-five.vercel.app/",
+    "img": "Images/TetrisGame.png",
+    "icon": "fa-solid fa-list-gamepad"
+  }
+]

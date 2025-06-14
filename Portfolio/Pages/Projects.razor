@@ -1,9 +1,48 @@
 @page "/Projects"
+@inject HttpClient Http
 
 <div class="scroll-section projects-section">
-    <h1>Projects</h1>
+    <h2>MY PROJECTS</h2>
+    @if (ProjectModels == null)
+    {
+        <p>Loading projects...</p>
+    }
+    else
+    {
+        <div class="projects-grid">
+            @foreach (var project in ProjectModels)
+            {
+                <a href="@project.Url" target="_blank" class="project-card" rel="noopener noreferrer">
+                    <div class="card-image">
+                        <img src="@project.Img" alt="@project.Title" />
+                    </div>
+                    <div class="card-content">
+                        <h3>
+                            <i class="@project.Icon" aria-hidden="true"></i> @project.Title
+                        </h3>
+                        <p>@project.Description</p>
+                    </div>
+                </a>
+            }
+        </div>
+    }
 </div>
 
 @code {
-    
+    private List<Project>? ProjectModels;
+
+    protected override async Task OnInitializedAsync()
+    {
+        ProjectModels = await Http.GetFromJsonAsync<List<Project>>("data/projects.json");
+    }
+
+    public class Project
+    {
+        public string Title { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public string Url { get; set; } = string.Empty;
+        public string Img { get; set; } = string.Empty;
+        public string Icon { get; set; } = string.Empty;
+    }
 }
+
