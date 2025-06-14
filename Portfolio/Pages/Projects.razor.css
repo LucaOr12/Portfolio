@@ -6,7 +6,8 @@
     flex-direction: column;
     align-items: center;
 }
-.projects-section h2{
+
+.projects-section h2 {
     text-align: center;
     font-size: 6rem;
     font-weight: 700;
@@ -18,12 +19,14 @@
     background-clip: text;
     color: transparent;
 }
+
 .projects-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
     padding: 0 2rem 2rem 2rem;
+    position: relative;
 }
 
 .project-card {
@@ -34,14 +37,25 @@
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
     text-decoration: none;
     color: var(--color-text);
-    transition: transform 0.15s ease-in-out;
+    transition: transform 0.3s ease, z-index 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
 }
 
-.project-card:hover {
-    animation: vibrate 0.2s linear infinite;
-    transform: scale(1.05);
+/* Shrink surrounding cards slightly when hovering grid */
+.projects-grid:hover .project-card {
+    transform: scale(0.95);
+    opacity: 0.7;
+}
+
+/* Enlarge hovered card and bring it forward */
+.projects-grid:hover .project-card:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    z-index: 10;
+    filter: brightness(1.05);
 }
 
 .card-image img {
@@ -69,14 +83,6 @@
 }
 
 .card-content p {
+    font-size: 1.5rem;
     margin: 0;
-}
-
-@keyframes vibrate {
-    0% { transform: translate(0); }
-    20% { transform: translate(-1px, 1px); }
-    40% { transform: translate(-1px, -1px); }
-    60% { transform: translate(1px, 1px); }
-    80% { transform: translate(1px, -1px); }
-    100% { transform: translate(0); }
 }
