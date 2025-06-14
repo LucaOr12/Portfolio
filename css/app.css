@@ -10,6 +10,8 @@
   --color-gradientUp: linear-gradient(0deg, #FF5741, #FFC741);
 }
 
+*{outline: none;}
+
 html, body, #app {
   height: 100%;
   margin: 0;
