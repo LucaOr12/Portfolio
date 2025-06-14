@@ -166,6 +166,44 @@ main[b-57rfh191dz] {
 .hamburger.open .bottom[b-6e1lymgyb0] {
     transform: rotate(-45deg) translate(6px, -6px);
 }
+/* /Loader.razor.rz.scp.css */
+.loader-container[b-3jdxsqaz80] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--color-bg, #0f0f0f);
+    color: var(--color-text, #ffffff);
+    font-family: 'Poppins', sans-serif;
+}
+
+.spinner[b-3jdxsqaz80] {
+    width: 80px;
+    height: 80px;
+    border: 6px solid rgba(255, 255, 255, 0.1);
+    border-top: 6px solid var(--color-accent);
+    border-radius: 50%;
+    animation: spin-b-3jdxsqaz80 1s linear infinite;
+}
+
+.loader-container p[b-3jdxsqaz80] {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    opacity: 0.7;
+    animation: blink-b-3jdxsqaz80 1.2s infinite;
+}
+
+@keyframes spin-b-3jdxsqaz80 {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes blink-b-3jdxsqaz80 {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 1; }
+}
 /* /Pages/AboutMe.razor.rz.scp.css */
 .aboutme-section[b-vc1rxuirtp] {
     display: flex;
