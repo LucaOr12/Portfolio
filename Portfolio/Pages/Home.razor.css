@@ -2,11 +2,38 @@
     background-color: var(--color-bg);
     color: var(--color-text);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    height: 100vh;
+    text-align: center;
     scroll-snap-align: start;
+    height: 100vh;
     padding: 2rem;
     box-sizing: border-box;
+}
+
+.home-section .content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.home-section .content h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home-section .content p {
+    font-size: 2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-family: 'Roboto', sans-serif;
 }
