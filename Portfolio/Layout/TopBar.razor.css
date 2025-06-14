@@ -15,7 +15,7 @@
     border: none;
 }
 .topbar.open{
-    background-color: var(--color-accent);
+    background: var(--color-gradient);
 }
 
 /* Left content styling */

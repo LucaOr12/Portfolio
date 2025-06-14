@@ -4,7 +4,7 @@
     right: -250px;
     width: 250px;
     height: calc(100% - 60px); /* adjusted height */
-    background: var(--color-accent);
+    background: var(--color-gradientUp);
     color: var(--color-text);
     padding: 1rem;
     transition: right 0.3s ease;
