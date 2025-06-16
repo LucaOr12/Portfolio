@@ -37,3 +37,23 @@
     margin: 0 auto 2rem;
     font-family: 'Poppins', sans-serif;
 }
+
+@media (max-width:768px){
+    .home-section{
+        max-width: 100%;
+        margin-top : 200px;
+        padding: 1.5rem;
+    }
+    
+    .home-section .content h1{
+        font-size: 4rem;
+    }
+    
+    .home-section .content h2{
+        font-size: 2rem;
+    }
+    .home-section .content p{
+        font-size: 1.2rem;
+        padding: 0 1rem;
+    }
+}

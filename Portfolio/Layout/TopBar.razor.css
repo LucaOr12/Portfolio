@@ -81,3 +81,16 @@
 .hamburger.open .bottom {
     transform: rotate(-45deg) translate(6px, -6px);
 }
+
+@media (max-width:768px){
+    .topbar.open {
+        background: transparent;
+    }
+    .contact{
+        display: none;
+    }
+    
+    .left-title {
+        font-size: 1.5rem;
+    }
+}
