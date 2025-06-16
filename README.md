@@ -9,7 +9,7 @@ This project serves as a centralized hub for showcasing all my software developm
 ##Tech Stack
 
 - **Frontend**: Blazor WebAssembly (.NET 9+)
-- **Styling**: CSS/ TailwindCSS
+- **Styling**: CSS
 - **Hosting**: GitHub Pages
-- **Other**: C#, ASP.NET API and MongoDB
+- **Other**: C#, Javascript
 
