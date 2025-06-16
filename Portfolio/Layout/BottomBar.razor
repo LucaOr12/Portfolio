@@ -1,0 +1,43 @@
+@inject IJSRuntime JS
+
+<div class="bottom-bar">
+    <div class="left-content"></div>
+
+    <div class="right-content">
+        <button class="theme-toggle" @onclick="ToggleTheme" @ref="themeButtonRef" data-theme-button>
+            <i class="fas @(isDarkMode ? "fa-sun" : "fa-moon")"></i>
+        </button>
+    </div>
+</div>
+
+@code {
+    private ElementReference themeButtonRef;
+    private bool isDarkMode = false;
+    
+    protected override async Task OnInitializedAsync()
+    {
+        var theme = await JS.InvokeAsync<string>("localStorage.getItem", "theme");
+        isDarkMode = theme == "dark";
+    }
+
+    private async Task ToggleTheme()
+    {
+        isDarkMode = !isDarkMode;
+
+        // Get the button's position
+        var rect = await JS.InvokeAsync<DOMRect>("eval", $"document.querySelector('[data-theme-button]').getBoundingClientRect()");
+        var x = rect.left + rect.width / 2;
+        var y = rect.top + rect.height / 2;
+
+        // Call your custom theme animation function
+        await JS.InvokeVoidAsync("triggerThemeWave", x, y, isDarkMode);
+    }
+
+    private class DOMRect
+    {
+        public double left { get; set; }
+        public double top { get; set; }
+        public double width { get; set; }
+        public double height { get; set; }
+    }
+}

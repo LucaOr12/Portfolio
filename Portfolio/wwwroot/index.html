@@ -9,7 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2" />
     <link href="Portfolio.styles.css" rel="stylesheet" />
     <script>
         window.scrollToSection = function (id) {
@@ -22,6 +22,33 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
     <script src="js/lottie-loader.js"></script>
+    <script src="js/theme.js"></script>
+    <script>
+        window.triggerThemeRipple = function (x, y, isDark) {
+            const ripple = document.createElement('div');
+            ripple.className = 'theme-ripple';
+            ripple.style.left = `${x}px`;
+            ripple.style.top = `${y}px`;
+
+            document.body.appendChild(ripple);
+
+            requestAnimationFrame(() => {
+                ripple.classList.add('expand');
+            });
+
+            setTimeout(() => {
+                document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                ripple.remove();
+            }, 800); // match animation duration
+        };
+    </script>
+
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+    
     
 </head>
 
@@ -36,6 +63,17 @@
         <span class="dismiss">🗙</span>
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const savedTheme = localStorage.getItem("theme") || "light";
+            document.documentElement.setAttribute("data-theme", savedTheme);
+            
+            if (window.loadLottieAnimation) {
+                window.loadLottieAnimation(savedTheme);
+            }
+        });
+    </script>
 </body>
 
 </html>
