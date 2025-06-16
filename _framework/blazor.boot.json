@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Portfolio",
   "resources": {
-    "hash": "sha256-yUDtiOT91JQ772g5aSXodMScp8GAEMS48dNeQro4UOM=",
+    "hash": "sha256-o5yZCxwwKvxJn0Nou1blKZ6agl8Ldx+nNslfVQgPqao=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Components.roe9w44r4d.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.ngmr6kx0gy.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
@@ -36,7 +36,7 @@
       "System.Text.Json.lepawgii6u.wasm": "System.Text.Json.wasm",
       "System.Text.RegularExpressions.3zydt3n8n9.wasm": "System.Text.RegularExpressions.wasm",
       "System.Private.CoreLib.kdlmcmug5m.wasm": "System.Private.CoreLib.wasm",
-      "Portfolio.ddwe6jsofh.wasm": "Portfolio.wasm",
+      "Portfolio.0efg1ltjaw.wasm": "Portfolio.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.rtblh4npr3.js": "dotnet.native.js",
       "dotnet.native.aqhezbunpl.wasm": "dotnet.native.wasm",
@@ -95,7 +95,7 @@
       "System.Text.Encodings.Web.j8jbnca1on.wasm": "sha256-3cJRUrFjSoiaGlI3OmHNndawtN8Y5lEgLHYI76jlAvo=",
       "System.Text.Json.lepawgii6u.wasm": "sha256-42Dc8NEr1FOKIX5mE3koct2nZvQm8HC/bKu7rDXv1AA=",
       "System.Text.RegularExpressions.3zydt3n8n9.wasm": "sha256-sXTH9c57ccmOHrE+Bpsiewg0xWGtHrbl8KBKpTJW9VA=",
-      "Portfolio.ddwe6jsofh.wasm": "sha256-YU0NxJjZs1BSAyYcgO3lDgZdMN1dnQccZdqYWEj09tU="
+      "Portfolio.0efg1ltjaw.wasm": "sha256-6FbCd0ep+0s8rJPK8dSXVvIdYLpms5ag43joMs9piCY="
     }
   },
   "cacheBootResources": true,

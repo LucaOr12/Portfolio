@@ -82,6 +82,29 @@ main[b-57rfh191dz] {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 998;
 }
+
+@media (max-width: 768px){
+    .navbar[b-en1a8on1pm] {
+        top:0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        padding-top:4rem;
+        box-shadow:none;
+    }
+    
+    .navbar.open[b-en1a8on1pm]{
+        right:0;
+    }
+    
+    .navbar ul[b-en1a8on1pm]{
+        margin-top: 3rem;
+    }
+    
+    .navbar a[b-en1a8on1pm] {
+        font-size: 2rem;
+    }
+}
 /* /Layout/TopBar.razor.rz.scp.css */
 .topbar[b-6e1lymgyb0] {
     position: fixed;
@@ -165,6 +188,19 @@ main[b-57rfh191dz] {
 
 .hamburger.open .bottom[b-6e1lymgyb0] {
     transform: rotate(-45deg) translate(6px, -6px);
+}
+
+@media (max-width:768px){
+    .topbar.open[b-6e1lymgyb0] {
+        background: transparent;
+    }
+    .contact[b-6e1lymgyb0]{
+        display: none;
+    }
+    
+    .left-title[b-6e1lymgyb0] {
+        font-size: 1.5rem;
+    }
 }
 /* /Loader.razor.rz.scp.css */
 .loader-container[b-3jdxsqaz80] {
@@ -296,6 +332,32 @@ main[b-57rfh191dz] {
     font-size: 1.2rem;
     line-height: 1.6;
 }
+
+@media (max-width: 768px){
+    .aboutme-section[b-vc1rxuirtp]{
+        flex-direction: column;
+        padding:2rem;
+        height:100%;
+        
+    }
+    .aboutme-left[b-vc1rxuirtp]{
+        display: none;
+    }
+    
+    .aboutme-right[b-vc1rxuirtp]{
+        align-items: center;
+        text-align: center;
+    }
+    .aboutme-right h1[b-vc1rxuirtp]{
+        font-size: 3rem;
+        
+    }
+    
+    .aboutme-right p[b-vc1rxuirtp]{
+        font-size: 0.89rem;
+        max-width: 100%;
+    }
+}
 /* /Pages/Contacts.razor.rz.scp.css */
 .contacts-section[b-dhq13rxui7] {
     display: flex;
@@ -383,6 +445,22 @@ main[b-57rfh191dz] {
 .social-links i[b-dhq13rxui7] {
     font-size: 1.8rem;
 }
+
+@media (max-width: 768px) {
+    .contacts-section[b-dhq13rxui7] {
+        padding: 1rem 1rem 4rem 1rem;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100vh;
+    }
+    .contacts-left[b-dhq13rxui7]{
+        display: none;
+    }
+    .contacts-section h2[b-dhq13rxui7] {
+        font-size: 3rem;
+        margin: 4rem 0 2rem 0;
+    }
+}
 /* /Pages/Home.razor.rz.scp.css */
 .home-section[b-ois3x2fd0s] {
     background-color: var(--color-bg);
@@ -422,6 +500,26 @@ main[b-57rfh191dz] {
     max-width: 600px;
     margin: 0 auto 2rem;
     font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width:768px){
+    .home-section[b-ois3x2fd0s]{
+        max-width: 100%;
+        margin-top : 200px;
+        padding: 1.5rem;
+    }
+    
+    .home-section .content h1[b-ois3x2fd0s]{
+        font-size: 4rem;
+    }
+    
+    .home-section .content h2[b-ois3x2fd0s]{
+        font-size: 2rem;
+    }
+    .home-section .content p[b-ois3x2fd0s]{
+        font-size: 1.2rem;
+        padding: 0 1rem;
+    }
 }
 /* /Pages/Projects.razor.rz.scp.css */
 .projects-section[b-437rvyghf2] {
@@ -511,4 +609,51 @@ main[b-57rfh191dz] {
 .card-content p[b-437rvyghf2] {
     font-size: 1.5rem;
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    .projects-section[b-437rvyghf2] {
+        padding: 1rem;
+    }
+    .projects-section h2[b-437rvyghf2] {
+        font-size: 3rem;
+        margin: 4rem 0 2rem 0;
+    }
+    .projects-grid[b-437rvyghf2] {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 1rem 1rem 1rem;
+    }
+    .project-card[b-437rvyghf2] {
+        width: 100%;
+        max-width: 100%;
+        
+        transform:none;
+        opacity: 1;
+    }
+    .project-card:hover[b-437rvyghf2] {
+        transform:none;
+    }
+    .projects-grid:hover .project-card[b-437rvyghf2] {
+        transform:none;
+        opacity:1;
+    }
+    .projects-grid:hover .project-card:hover[b-437rvyghf2] {
+        transform:none;
+        z-index:1;
+        filter:none;
+    }
+    
+    .card-image img[b-437rvyghf2] {
+        height: 100px;
+    }
+    
+    .card-content p[b-437rvyghf2] {
+        font-size: 1rem;
+    }
+    
+    .card-content h3[b-437rvyghf2] {
+        font-size: 1rem;
+    }
+    
 }
