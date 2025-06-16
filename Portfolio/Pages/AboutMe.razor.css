@@ -90,6 +90,32 @@
     line-height: 1.6;
 }
 
+@media (max-width: 1754px) and (min-width: 769px){
+    .aboutme-left {
+        flex: 0 0 45%; 
+        padding-right: 5rem; 
+        justify-content: flex-end;
+    }
+    .aboutme-right {
+        flex: 0 0 50%; 
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .circle-image {
+        width: 400px; 
+        height: 400px;
+    }
+    .aboutme-right h1 {
+        font-size: 4rem; 
+    }
+    .aboutme-right p {
+        max-width: 500px;
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 768px){
     .aboutme-section{
         flex-direction: column;

@@ -22,4 +22,15 @@ main {
     box-sizing: border-box;
 }
 
+#theme-ripple {
+    position: fixed;
+    border-radius: 50%;
+    background: var(--color-bg);
+    pointer-events: none;
+    transform: scale(0);
+    opacity: 0.75;
+    z-index: 10000;
+    transition: transform 0.7s ease-out, opacity 0.5s ease-out;
+}
+
 

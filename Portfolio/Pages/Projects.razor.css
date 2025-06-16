@@ -87,6 +87,19 @@
     margin: 0;
 }
 
+@media (max-width: 1754px) and (min-width: 769px) {
+    .projects-grid {
+        gap: 1.5rem;
+        padding: 0 1.5rem 1.5rem 1.5rem;
+        justify-content: flex-start; 
+    }
+    .project-card {
+        width: 45%; 
+        min-width: 280px; 
+        max-width: 400px; 
+    }
+}
+
 @media (max-width: 768px) {
     .projects-section {
         padding: 1rem;

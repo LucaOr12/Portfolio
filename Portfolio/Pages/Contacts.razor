@@ -31,7 +31,8 @@
     {
         if (firstRender)
         {
-            await JS.InvokeVoidAsync("loadLottieAnimation");
+            var theme = await JS.InvokeAsync<string>("localStorage.getItem", "theme") ?? "light";
+            await JS.InvokeVoidAsync("loadLottieAnimation", theme);
         }
     }
 }
