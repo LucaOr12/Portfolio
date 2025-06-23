@@ -19,5 +19,12 @@
     "url": "https://tetris-website-five.vercel.app/",
     "img": "Images/TetrisGame.png",
     "icon": "fa-solid fa-gamepad"
+  },
+  {
+    "title": "Book Nest",
+    "description": "A Library E-Commerce website, using React as Frontend, and .NET REST API with postgreSQL database as Backend.",
+    "url": "https://book-nest-lemon.vercel.app/",
+    "img": "Images/BookNest.png",
+    "icon": "fa-solid fa-book"
   }
 ]
