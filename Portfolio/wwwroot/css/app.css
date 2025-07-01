@@ -46,7 +46,6 @@ html, body, #app {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   font-family: 'Poppins', sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -62,7 +61,8 @@ html, body, #app {
 }
 
 .scroll-section {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   scroll-snap-align: start;
   padding-top: 60px; /* offset for fixed TopBar */
   box-sizing: border-box;
