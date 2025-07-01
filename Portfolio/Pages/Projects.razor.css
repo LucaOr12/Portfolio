@@ -4,6 +4,7 @@
     color: var(--color-text);
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
     align-items: center;
 }
 
@@ -116,7 +117,6 @@
     .project-card {
         width: 100%;
         max-width: 100%;
-        
         transform:none;
         opacity: 1;
     }
