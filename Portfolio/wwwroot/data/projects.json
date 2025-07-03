@@ -14,11 +14,11 @@
     "icon": "fa-solid fa-palette"
   },
   {
-    "title": "Tetris Game",
-    "description": "A simple Javascript Tetris game.",
-    "url": "https://tetris-website-five.vercel.app/",
-    "img": "Images/TetrisGame.png",
-    "icon": "fa-solid fa-gamepad"
+    "title": "CATBOOK",
+    "description": "A Social Network App for Cats!, built with React, using .NET API with postgreSQL database.",
+    "url": "https://cat-book-six.vercel.app/",
+    "img": "Images/CATBOOK.png",
+    "icon": "fa-solid fa-paw"
   },
   {
     "title": "Book Nest",
@@ -33,5 +33,12 @@
     "url": "https://npc-forge-seven.vercel.app/",
     "img": "Images/NPCForge.png",
     "icon": "fa-solid fa-brain"
+  },
+  {
+    "title": "Tetris Game",
+    "description": "A simple Javascript Tetris game.",
+    "url": "https://tetris-website-five.vercel.app/",
+    "img": "Images/TetrisGame.png",
+    "icon": "fa-solid fa-gamepad"
   }
 ]
