@@ -26,5 +26,12 @@
     "url": "https://book-nest-lemon.vercel.app/",
     "img": "Images/BookNest.png",
     "icon": "fa-solid fa-book"
+  },
+  {
+    "title": "NPC Forge",
+    "description": "An AI powered website for D&D Game Masters. Built with React, it uses APIs from an LLM",
+    "url": "https://npc-forge-seven.vercel.app/",
+    "img": "Images/NPCForge.png",
+    "icon": "fa-solid fa-brain"
   }
 ]
